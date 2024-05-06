@@ -21,21 +21,23 @@ public class UserDetailsImpl implements UserDetails {
 		this.password = user.getSenha();
 	}
 
-	public UserDetailsImpl() {
-	}
+	public UserDetailsImpl() {	}
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
+
 		return authorities;
 	}
 
 	@Override
 	public String getPassword() {
+
 		return password;
 	}
 
 	@Override
 	public String getUsername() {
+
 		return userName;
 	}
 
